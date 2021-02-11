@@ -26,7 +26,6 @@ def mainIndex():
             "POD_NAME": k
         })
     return jsonify(myPodResult)
-myPodResult[:] = []
 
 @app.route("/myPodInfo")
 def getPodDetails():
@@ -41,7 +40,7 @@ def getPodDetails():
             "POD_NAME": k
         })
     return jsonify(myPodResult)
-myPodResult[:] = []
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
