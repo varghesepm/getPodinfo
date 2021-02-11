@@ -20,6 +20,7 @@ $ kind create cluster --config kind-cluster-config.yaml --name myk8s
 
 ##### Helm chart - nginxIngress
 - Application is packaged using Helm chart, as Umberlla chart. nginx ingress as Parent chart and respective python application (podApp) as dependent chart
+- official nginx ingress helm chart is used in this repo
 ```
 dependencies:
 - name: podApp
