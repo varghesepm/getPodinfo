@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.configmap.name}}
+  namespace: n1
+data:
+  NAMESPACE1: "n1"
+  NAMESPACE2: "n2"

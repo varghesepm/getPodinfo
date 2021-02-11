@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+{{ .Values.ingressRule.annotations | indent 4 }}
+  name: {{ .Values.ingressRule.name}}
+  namespace: {{ .Release.Namespace }}
+spec:
+  rules:
+  - host: {{ .Values.ingressRule.rules.host}}
+    http:
+      paths:
+      - path: {{ .Values.ingressRule.rules.path}}
+        backend:
+          serviceName: {{ .Values.ingressRule.rules.serviceName }}
+          servicePort: {{ .Values.ingressRule.rules.servicePort }}

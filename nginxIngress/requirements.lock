@@ -1,0 +1,6 @@
+dependencies:
+- name: podApp
+  repository: file://../podApp
+  version: 0.1.0
+digest: sha256:cc754fe00fd9eb75e7fc7582af15bcc3f6d7817fd5109b5347e4d505cd2d0148
+generated: "2021-02-11T17:23:51.575430603+05:30"
