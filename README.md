@@ -9,6 +9,7 @@
 ```
 $ docker build -t podinfoapp:tag-01 .
 ```
+- images can be found in https://hub.docker.com/r/mmebin/podinfoapp1
 
 ##### kind-config
 - Using KinD for k8s cluster 
@@ -47,7 +48,7 @@ helm  install ingress2 . --create-namespace --namespace n2
 $ kubectl get no -o wide
 ```
 - point the localhost to worker node ip in /etc/hosts
-- curl localhost:30080 and curl localhost:30081
+- curl localhost:30080 and curl localhost:30081 to get the result
 
 ##### Metric server and hpa
 - Metric server is deployed using normal manifest file 
