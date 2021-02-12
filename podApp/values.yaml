@@ -42,7 +42,7 @@ resources: |
 
 autoscaling:
   enabled: true
-  name: pod-hpa
+  name: podinfoapp1-deployment
   minReplicas: 1
   maxReplicas: 2
   targetCPUUtilizationPercentage: 60
